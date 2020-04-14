@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">dataDosenAMIKOM irfan_NA</string>
+    <string-array name="jmlKolom">
+        <item>Silakan Pilih jumlah Kolom</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+</resources>
