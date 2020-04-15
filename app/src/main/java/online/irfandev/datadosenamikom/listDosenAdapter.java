@@ -24,7 +24,6 @@ public class listDosenAdapter extends RecyclerView.Adapter<listDosenAdapter.MyHo
     ArrayList<String> mAlamat = new ArrayList<>();
     ArrayList<String> mEmail = new ArrayList<>();
 
-
     public listDosenAdapter(Context context, ArrayList<String> mFoto, ArrayList<String> mNama, ArrayList<String> mAlamat, ArrayList<String> mEmail) {
         this.context = context;
         this.mFoto = mFoto;
@@ -36,6 +35,7 @@ public class listDosenAdapter extends RecyclerView.Adapter<listDosenAdapter.MyHo
     @NonNull
     @Override
     public MyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        //memanggil class myHolder
         View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.list_data_dosen,parent,false);
         MyHolder holder=new MyHolder(view);
         return holder;

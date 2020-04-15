@@ -14,7 +14,6 @@ import android.widget.Spinner;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
-
     ArrayList<String> mFoto = new ArrayList<>();
     ArrayList<String> mNama = new ArrayList<>();
     ArrayList<String> mAlamat = new ArrayList<>();
@@ -27,6 +26,23 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        mFoto.add("http://dosen.amikompurwokerto.ac.id/foto_dosen/0616019301.jpg");
+        mNama.add("Argiyan Dwi Pritama");
+        mAlamat.add("Jl. Pramuka Raya, Karangklesem RT02/02 No.10, Purwokerto Selatan, purwokerto, banyumas, Jawatengan, Indonesia");
+        mEmail.add("argiyandwi@amikompurwokerto.ac.id");
+
+        mFoto.add("data:image/webp;base64,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");
+        mNama.add("Didit Suhartono");
+        mAlamat.add("-");
+        mEmail.add("didit@amikompurwokerto.ac.id");
+
+        mFoto.add("http://dosen.amikompurwokerto.ac.id/foto_dosen/Nx200x0609109202.jpg.pagespeed.ic.9McGOUi8z3.webp");
+        mNama.add("Dani Arifudin");
+        mAlamat.add("Tegal - Purwokerto");
+        mEmail.add("daniarif@amikompurwokerto.ac.id");
+
 
         mFoto.add("data:image/webp;base64,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");
         mNama.add("Abdul Azis");
@@ -57,21 +73,6 @@ public class MainActivity extends AppCompatActivity {
         mNama.add("Akto Hariawan");
         mAlamat.add("-");
         mEmail.add("akto.85@gmail.com");
-
-        mFoto.add("http://dosen.amikompurwokerto.ac.id/foto_dosen/0616019301.jpg");
-        mNama.add("Argiyan Dwi Pritama");
-        mAlamat.add("Jl. Pramuka Raya, Karangklesem RT02/02 No.10, Purwokerto Selatan, purwokerto, banyumas, Jawatengan, Indonesia");
-        mEmail.add("argiyandwi@amikompurwokerto.ac.id");
-
-        mFoto.add("data:image/webp;base64,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");
-        mNama.add("Didit Suhartono");
-        mAlamat.add("-");
-        mEmail.add("didit@amikompurwokerto.ac.id");
-
-        mFoto.add("http://dosen.amikompurwokerto.ac.id/foto_dosen/Nx200x0609109202.jpg.pagespeed.ic.9McGOUi8z3.webp");
-        mNama.add("Dani Arifudin");
-        mAlamat.add("Tegal - Purwokerto");
-        mEmail.add("daniarif@amikompurwokerto.ac.id");
 
         recyclerView = (RecyclerView)findViewById(R.id.recDataDosen);
         listDosenAdapter adapter= new listDosenAdapter(this,mFoto,mNama,mAlamat,mEmail);

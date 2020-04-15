@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">dataDosenAMIKOM irfan_NA</string>
+    <string name="app_name">dataDosenAMIKOM </string>
     <string-array name="jmlKolom">
         <item>Silakan Pilih jumlah Kolom</item>
         <item>1</item>
